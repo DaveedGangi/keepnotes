@@ -1,0 +1,174 @@
+body{
+    margin:0px;
+    padding:0px;
+  
+
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:22px;
+    background-color: #d9dfe8;
+    color: rgb(11, 10, 10);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    align-items: center;
+    height:77px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+   
+   
+
+}
+.search{
+    width:300px;
+    height:39px;
+    border:0.4px solid rgb(210, 146, 146);
+    outline: none;
+    padding-left:9px;
+    border-radius: 4px;
+}
+
+.search-button{
+    height:37px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.user-image{
+    width:55px;
+    height:55px;
+    border-radius:50px;
+    
+
+}
+
+.note-container{
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+
+.left-side{
+    background-color: #eef3f2;
+    color:rgb(32, 31, 14);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding:20px;
+    width:20%;
+    height:699px;
+    border-right: 1px solid lightgray;
+    overflow-y: auto;
+    
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top:100px;
+    margin-right:33px;
+}
+
+.right-side{
+    width:66%;
+    height:699px;
+    background-color: #eaeaea;
+    color:rgb(50, 84, 114);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    padding:20px;
+    overflow-y: auto;
+   
+   
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top:13px;
+   
+
+
+}
+
+
+
+.notes-button{
+    width:188px;
+    height:37px;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    border: none;
+    background-color: #cfd7e0;
+    margin-top:12px;
+}
+
+.notes-button:hover{
+    background-color: #0069D9;
+}
+
+
+.note-image{
+    border-radius: 3px;
+    height: 33px;
+}
+
+.new-note{
+    display: none;
+}
+
+.new-note.active{
+    display: block;
+}
+
+
+
+
+
+
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    height:33px;
+    width:200px;
+    padding-left:12px;
+}
+.note{
+    margin-bottom: 20px;
+    width:200px;
+    padding:10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right:10px;
+}
+
+.color{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom:10px;
+}
+
+.archive-button{
+    border:0px;
+    cursor: pointer;
+}
+
+.delete-button{
+    border:0px;
+    cursor: pointer;
+}
