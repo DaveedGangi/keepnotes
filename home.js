@@ -1,4 +1,8 @@
+
+
 document.addEventListener("DOMContentLoaded",function(){
+
+
 
 
 
@@ -27,9 +31,10 @@ noteTake.addEventListener("click", function(event){
 newNoteSave.addEventListener("click",async function(event){
 
     event.preventDefault();
+    console.log("New Note Item Selected");
 
     function generateUniqueId() {
-     return Math.floor(Math.random() * 10000000000000000000).toString(16);
+        return Math.floor(Math.random() * 10000000000000000000);
 
     }
 
@@ -48,13 +53,15 @@ newNoteSave.addEventListener("click",async function(event){
         const response = await fetch("https://notes-2-wrxv.onrender.com/notesAdd/", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                Accept: "application/json"
             },
             body: JSON.stringify(newNoteObj)
         });
 
         if (response.ok) {
             console.log("Note saved successfully");
+            fetchNotes();
         } else {
             console.error("Failed to save note:", response.statusText);
         }
